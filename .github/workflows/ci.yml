@@ -39,7 +39,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler: default
-          bundler-cache: true
+          bundler-cache: false
           rubygems: latest
       - name: StandardRb check
         run: bundle exec standardrb
